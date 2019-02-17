@@ -19,6 +19,6 @@ Here is a step-by-step navigation at AirbnBoost.
 The implementation has three main components:
 
 - `01 - data_preprocessing.ipynb`, a notebook that geolocates and spatially joins Airbnb listing data with urban data sets and processes them before they are used as inputs in the modeling part.
-- `02 - data_modeling.ipynb`
-- `app.py`
+- `02 - data_modeling.ipynb`, a notebook that trains the two models behind AirbnBoost. An LDA model extracts the topics from the listing descriptions. XGBoost is the algorithm behind the pricing model.
+- `app.py`, is a Flask web app deployed on Heroku (http:\\airbnboost.xyz).
 
