@@ -11,4 +11,6 @@
 
 Here is a step-by-step navigation at AirbnBoost.
 
+<p align="center"> 
 ![](app/templates/airbnBoost_gif.gif)
+ </p>
