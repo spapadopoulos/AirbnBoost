@@ -22,7 +22,7 @@ The implementation has three main components:
 - `02 - data_modeling.ipynb`, a notebook that trains the two models behind AirbnBoost. An LDA model extracts the topics from the listing descriptions. XGBoost is the algorithm behind the pricing model.
 - `app.py`, is a Flask web app deployed on Heroku cloud.
 
-## Licence
+## License
 
 Copyright &copy; 2019 Sokratis Papadopoulos. All rights reserved.
 
