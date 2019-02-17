@@ -11,5 +11,5 @@
 
 Here is a step-by-step navigation at AirbnBoost.
 
-![center](app/templates/airbnBoost_gif.gif)
+->![](app/templates/airbnBoost_gif.gif)<-
 
