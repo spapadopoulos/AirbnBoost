@@ -18,5 +18,7 @@ Here is a step-by-step navigation at AirbnBoost.
 
 The implementation has three main components:
 
-- `01_data_preprocessing.ipynb`
+- `01 - data_preprocessing.ipynb`, a notebook that geolocates and spatially joins Airbnb listing data with urban data sets and processes them before they are used as inputs in the modeling part.
+- `02 - data_modeling.ipynb`
+- `app.py`
 
