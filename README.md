@@ -1,5 +1,5 @@
 # AirbnBoost
-[AirbnBoost](http://www.airbnboost.xyz) is a machine learning-powerd platform that enables users to make faster and better informed Airbnb decisions.
+[AirbnBoost](http://www.airbnboost.xyz) is an online platform powered by machine learning that enables users to make faster and better informed Airbnb decisions.
 
 ## Features
 - See how each listing is priced compared to similar listings based on AirbnBoost's price prediction algorithm. __Find great deals__ based on the deviation between the pricing algorithm prediction and the actual listing price.
@@ -21,4 +21,8 @@ The implementation has three main components:
 - `01 - data_preprocessing.ipynb`, a notebook that geolocates and spatially joins Airbnb listing data with urban data sets and processes them before they are used as inputs in the modeling part.
 - `02 - data_modeling.ipynb`, a notebook that trains the two models behind AirbnBoost. An LDA model extracts the topics from the listing descriptions. XGBoost is the algorithm behind the pricing model.
 - `app.py`, is a Flask web app deployed on Heroku cloud.
+
+## Licence
+
+Copyright &copy;
 
