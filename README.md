@@ -23,5 +23,5 @@ The implementation has three main components:
 - `app.py`, is a Flask web app deployed on Heroku cloud.
 
 
-Copyright &copy; 2019 Sokratis Papadopoulos. All rights reserved.
+_Copyright &copy; 2019 Sokratis Papadopoulos. All rights reserved._
 
