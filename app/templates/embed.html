@@ -1,0 +1,107 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+
+      .buttons {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <div class="buttons">
+      <button class="subway">subway</button>
+    </div>
+
+
+
+    <!-- <script>
+    window.onload = function() {
+      cartodb.createVis('map', 'https://sp4356.cartodb.com/u/sp4356/api/v2/viz/09675bac-66dd-4641-adc1-8a4f9cfced10/viz.json',
+      {zoom:12, infowindow: true});
+    }
+    </script> -->
+
+    <script type="infowindow/html" id="infowindow_template">
+      <div class="CDB-infowindow CDB-infowindow--light js-infowindow" data-cover="true">
+<div class="CDB-infowindow-close js-close"></div>
+<div class="CDB-infowindow-container">
+  <div class="CDB-infowindow-header CDB-infowindow-headerMedia js-header js-cover">
+
+    <div class="CDB-infowindow-mediaTitle">
+      <h4 class="CDB-infowindow-title">
+        <span>{{name}}</span>
+      </h4>
+    </div>
+  </div>
+  <div class="CDB-infowindow-inner js-inner">
+
+    <div class="CDB-infowindow-list js-content">
+      <div class="CDB-infowindow-listItem CDB-infowindow-listItem--order1">
+        <h5 class="CDB-infowindow-subtitle">name</h5>
+        <h4 class="CDB-infowindow-title">{{name}}</h4>
+      </div>
+      <div class="CDB-infowindow-listItem CDB-infowindow-listItem--order2">
+        <h5 class="CDB-infowindow-subtitle">price</h5>
+        <h4 class="CDB-infowindow-title">{{price}}</h4>
+      </div>
+      <div class="CDB-infowindow-listItem CDB-infowindow-listItem--order3">
+        <h5 class="CDB-infowindow-subtitle">priceestimate</h5>
+        <h4 class="CDB-infowindow-title">{{priceestimate}}</h4>
+      </div>
+      <div class="CDB-infowindow-listItem CDB-infowindow-listItem--order4">
+        <h5 class="CDB-infowindow-subtitle">listing_url</h5>
+        <h4 class="CDB-infowindow-title"><a href={{listing_url}}>See it on Airbnb</a></h4>
+      </div>
+    </div>
+  </div>
+  <div class="CDB-hook">
+    <div class="CDB-hook-inner"></div>
+  </div>
+</div>
+    </script>
+
+
+
+    <script>
+      function main() {
+        cartodb.createVis(map, 'https://sp4356.cartodb.com/u/sp4356/api/v2/viz/09675bac-66dd-4641-adc1-8a4f9cfced10/viz.json')
+         .on('done', function(vis,layers) {
+           // get sublayer 0 and set the infowindow template
+           var sublayer = layers[1].getSubLayer(0);
+
+           sublayer.infowindow.set('sanitizeTemplate',false);
+
+           sublayer.infowindow.set('template', $('#infowindow_template').html());
+          }).on('error', function() {
+            console.log("some error occurred");
+          });
+      }
+
+      window.onload = main;
+    </script>
+
+
+
+
+
+  </body>
+</html>
