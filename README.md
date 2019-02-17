@@ -9,7 +9,7 @@
 
 ## Tutorial
 
-Here is a step-by-step navigation at AirbnBoost's UI.
+Here is a step-by-step navigation at AirbnBoost UI.
 
 ![](app/templates/airbnBoost_gif.gif)
 
