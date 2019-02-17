@@ -11,5 +11,12 @@
 
 Here is a step-by-step navigation at AirbnBoost.
 
-->![](app/templates/airbnBoost_gif.gif)<-
+![](app/templates/airbnBoost_gif.gif)
+
+
+## Implementation
+
+The implementation has three main components:
+
+- `01_data_preprocessing.ipynb`
 
