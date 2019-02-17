@@ -24,5 +24,5 @@ The implementation has three main components:
 
 ## Licence
 
-Copyright &copy;
+Copyright &copy; 2019 Sokratis Papadopoulos. All rights reserved.
 
