@@ -2,4 +2,4 @@
 A platform that enables users make faster and more informed Airbnb decisions. 
 
 
-![](ezgif.com-video-to-gif.gif)
+![](templates\airbnBoost_gif.gif)
